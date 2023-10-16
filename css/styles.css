@@ -648,7 +648,11 @@ fill: #f4f4fd;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 35px;
+    padding: 72px 24px 24px 24px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cross-btn{
@@ -665,38 +669,37 @@ fill: #f4f4fd;
     justify-content: center;
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
     cursor: pointer;
-    /*transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-.close-btn:hover,
-.close-btn:focus {
+.cross-btn:hover,
+.cross-btn:focus {
     background-color: #404bbf;
     border: none;
+
 }
 
 
 .cross-icon{
-    /*fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);transparent;*/
+fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*.close-btn:hover .cross-icon,
-.close-btn:focus .cross-icon {
+.cross-btn:hover .cross-icon,
+.cross-btn:focus .cross-icon {
     fill: #fff;
-}*/
+}
 
 
 .modal-text{
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     text-align: center;
     color:#2E2F42; ;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: ;
+    letter-spacing: 0.02em; 
 }
 
 .modal-contact-info{
@@ -738,13 +741,13 @@ position: relative;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    /*transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-/*.contact-input:focus+.contact-icon {
+.contact-input:focus+.contact-icon {
     fill: #4d5ae5;
-}*/
+}
 
 .modal-comment{
 margin-bottom: 16px;
@@ -805,20 +808,20 @@ margin-bottom: 24px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    /*transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
 }
 
-/*.checkbox-input:checked+.checkbox-label>.checkbox-click {
+.checkbox-input:checked+.checkbox-label>.checkbox-click {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
-}*/
+}
 
 .modal-btn-send{
     display: block;
